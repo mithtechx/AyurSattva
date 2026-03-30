@@ -9,12 +9,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
         
-        :root {
-            --green-dark: #0a3d2b;
-            --green-primary: #2e8b57;
-            --green-light: #90ee90;
-        }
-        
         body {
             font-family: 'Inter', system_ui, sans-serif;
         }
@@ -35,317 +29,213 @@
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgb(46 139 87 / 0.15);
         }
-        
-        .sticky-note {
-            background: linear-gradient(135deg, #ff9f9f, #ffcc99);
-            box-shadow: 8px 8px 0px #333;
-            transform: rotate(-3deg);
-        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
 
     <!-- NAVBAR -->
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- Logo from your uploaded image -->
-                <img src="https://i.imgur.com/placeholder-for-your-zEqCJ-image.jpg" alt="AyurSattva Logo" 
-                     class="h-12 w-auto"> <!-- REPLACE THIS SRC WITH YOUR UPLOADED BANNER IMAGE -->
-                <div>
-                    <span class="heading-font text-3xl font-bold tracking-tight text-[#0a3d2b]">AyurSattva</span>
-                </div>
+                <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center text-white text-xl">🌿</div>
+                <span class="heading-font text-3xl font-bold tracking-tight text-[#0a3d2b]">AyurSattva</span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#home" class="hover:text-[#2e8b57] transition">Home</a>
-                <a href="#about" class="hover:text-[#2e8b57] transition">About</a>
-                <a href="#products" class="hover:text-[#2e8b57] transition">Products</a>
-                <a href="#shop" class="hover:text-[#2e8b57] transition">Shop</a>
-                <a href="#contact" class="hover:text-[#2e8b57] transition">Contact</a>
+                <a href="#home" class="hover:text-emerald-700 transition">Home</a>
+                <a href="#about" class="hover:text-emerald-700 transition">About</a>
+                <a href="#products" class="hover:text-emerald-700 transition">Products</a>
+                <a href="#shop" class="hover:text-emerald-700 transition">Shop</a>
+                <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
             </div>
             
-            <a href="https://wa.me/919876543210" target="_blank"
-               class="bg-[#2e8b57] text-white px-5 py-2.5 rounded-2xl flex items-center gap-2 hover:bg-[#0a3d2b] transition">
-                <i class="fab fa-whatsapp text-xl"></i>
-                <span class="font-medium">Chat on WhatsApp</span>
+            <a href="#" onclick="alert('Open WhatsApp and message us!')" 
+               class="bg-emerald-700 text-white px-6 py-3 rounded-2xl flex items-center gap-2 hover:bg-emerald-800 transition">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
             </a>
         </div>
     </nav>
 
-    <!-- HERO SECTION - Using your uploaded green banner -->
-    <section id="home" class="hero-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <h1 class="heading-font text-6xl md:text-7xl font-bold leading-none">
-                    AyurSattva
-                </h1>
-                <p class="text-2xl font-light">The Essence of True Ayurveda.</p>
-                <p class="max-w-md text-lg opacity-90">
-                    Pure, handmade Ayurvedic hair care crafted with love from ancient herbs. 
-                    100% natural • Chemical-free • Made in India.
-                </p>
-                <div class="flex items-center gap-4">
+    <!-- HERO - Using your uploaded banner -->
+    <section id="home" class="hero-bg text-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center">
+                <img src="https://i.postimg.cc/0yZ5Z5Z5/your-banner-image.jpg" 
+                     alt="AyurSattva" 
+                     class="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl mb-10"> 
+                <!-- Replace above src with your actual uploaded banner image link if hosted -->
+                
+                <h1 class="heading-font text-6xl md:text-7xl font-bold">AyurSattva</h1>
+                <p class="text-2xl mt-3 text-emerald-100">The Essence of True Ayurveda</p>
+                
+                <div class="mt-10 flex gap-4 justify-center">
                     <a href="#shop" 
-                       class="bg-white text-[#0a3d2b] px-8 py-4 rounded-3xl font-semibold flex items-center gap-2 hover:scale-105 transition">
-                        <i class="fas fa-leaf"></i>
+                       class="bg-white text-emerald-800 px-10 py-4 rounded-3xl font-semibold text-lg hover:scale-105 transition">
                         Shop Now
                     </a>
-                    <a href="#products" 
-                       class="border border-white/70 px-8 py-4 rounded-3xl font-medium hover:bg-white/10 transition">
-                        Learn more
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Your uploaded banner image -->
-            <div class="flex justify-center">
-                <img src="https://i.imgur.com/placeholder-for-your-zEqCJ-image.jpg" alt="AyurSattva Banner" 
-                     class="w-full max-w-lg rounded-3xl shadow-2xl"> <!-- REPLACE WITH YOUR UPLOADED BANNER -->
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-12 items-center">
-                <div class="md:col-span-7">
-                    <h2 class="heading-font text-5xl font-semibold text-[#0a3d2b]">Rooted in Tradition.<br>Powered by Nature.</h2>
-                    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                        AyurSattva was born from a deep respect for India's ancient Ayurvedic wisdom. 
-                        We handcraft every product using time-tested herbs like Amla, Bhringraj, Reetha and more — 
-                        exactly as nature intended.
-                    </p>
-                    <div class="mt-8 flex gap-8">
-                        <div>
-                            <div class="text-[#2e8b57] text-4xl font-bold">100%</div>
-                            <div class="text-sm uppercase tracking-widest">Natural Herbs</div>
-                        </div>
-                        <div>
-                            <div class="text-[#2e8b57] text-4xl font-bold">0</div>
-                            <div class="text-sm uppercase tracking-widest">Parabens & SLS</div>
-                        </div>
-                        <div>
-                            <div class="text-[#2e8b57] text-4xl font-bold">Handmade</div>
-                            <div class="text-sm uppercase tracking-widest">With Love</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:col-span-5">
-                    <div class="sticky-note p-8 rounded-3xl text-[#0a3d2b]">
-                        <h3 class="font-semibold text-xl mb-4">Our Promise</h3>
-                        <ul class="space-y-3 text-sm">
-                            <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-emerald-600"></i> Handmade with natural herbs</li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-emerald-600"></i> Suitable for all hair types</li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-emerald-600"></i> No parabens &amp; SLS</li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check mt-1 text-emerald-600"></i> Cruelty-free &amp; Eco-friendly</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CURRENT PRODUCT: AYURVEDIC HAIR SHAMPOO -->
-    <section id="products" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="heading-font text-5xl font-semibold text-emerald-950">Pure. Natural. Ayurvedic.</h2>
+                <p class="mt-6 text-lg text-gray-600">
+                    Handcrafted Ayurvedic hair care using traditional herbs like Amla, Reetha, Shikakai, Bhringraj and more.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT PRODUCT: HAIR SHAMPOO -->
+    <section id="products" class="py-20 bg-emerald-50">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-12">
-                <span class="bg-[#2e8b57] text-white text-xs font-medium px-4 py-2 rounded-3xl">NOW AVAILABLE</span>
-                <h2 class="heading-font text-5xl font-semibold text-[#0a3d2b] mt-3">Ayurvedic Hair Shampoo</h2>
-                <p class="text-xl text-gray-600 mt-2">Gentle cleansing • Deep nourishment • Root-to-tip care</p>
+                <span class="bg-emerald-700 text-white px-6 py-2 rounded-full text-sm font-medium">CURRENTLY AVAILABLE</span>
+                <h2 class="heading-font text-5xl font-semibold text-emerald-950 mt-4">Ayurvedic Hair Shampoo</h2>
             </div>
 
-            <div class="grid md:grid-cols-12 gap-12">
-                <!-- Ingredients (from your pink note) -->
-                <div class="md:col-span-5 bg-white rounded-3xl shadow-sm p-8">
-                    <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-leaf text-[#2e8b57]"></i>
-                        Ingredients
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Ingredients -->
+                <div class="bg-white rounded-3xl p-10 shadow">
+                    <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                        <span class="text-emerald-600">🌿</span> Ingredients
                     </h3>
-                    <div class="grid grid-cols-2 gap-y-4 text-sm">
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">1.</span> Amla</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">9.</span> Aloe Vera</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">2.</span> Reetha</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">10.</span> Essential Oil</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">3.</span> Shikakai</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">4.</span> Bhringraj</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">5.</span> Flax Seeds</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">6.</span> Rosemary</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">7.</span> Fenugreek Seeds</div>
-                        <div class="flex gap-3"><span class="font-medium text-[#0a3d2b]">8.</span> Hibiscus</div>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-5 text-gray-700">
+                        <div>1. Amla</div>
+                        <div>2. Reetha</div>
+                        <div>3. Shikakai</div>
+                        <div>4. Bhringraj</div>
+                        <div>5. Flax Seeds</div>
+                        <div>6. Rosemary</div>
+                        <div>7. Fenugreek Seed</div>
+                        <div>8. Hibiscus</div>
+                        <div>9. Aloe Vera</div>
+                        <div>10. Essential Oil</div>
                     </div>
-                    <p class="text-xs text-gray-500 mt-8 italic">Hand-picked, sun-dried, and lovingly blended in small batches.</p>
                 </div>
 
-                <!-- Benefits (from your pink note) -->
-                <div class="md:col-span-7">
-                    <div class="bg-white rounded-3xl p-8 shadow-sm h-full">
-                        <h3 class="text-2xl font-semibold mb-6">Key Benefits</h3>
-                        <ul class="space-y-6">
-                            <li class="flex gap-4">
-                                <div class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">1</div>
-                                <div>100% Natural &amp; Chemical-free</div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">2</div>
-                                <div>Reduces hair fall significantly</div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">3</div>
-                                <div>Controls dandruff &amp; scalp irritation</div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">4</div>
-                                <div>Promotes healthy hair growth</div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">5</div>
-                                <div>Makes hair soft, shiny &amp; manageable</div>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Benefits -->
+                <div class="bg-white rounded-3xl p-10 shadow">
+                    <h3 class="text-2xl font-semibold mb-8">Benefits</h3>
+                    <ul class="space-y-5 text-gray-700">
+                        <li class="flex gap-3">✅ 100% Natural & Chemical Free</li>
+                        <li class="flex gap-3">✅ Reduces Hair Fall</li>
+                        <li class="flex gap-3">✅ Controls Dandruff</li>
+                        <li class="flex gap-3">✅ Promotes Hair Growth</li>
+                        <li class="flex gap-3">✅ Makes Hair Soft & Shiny</li>
+                        <li class="flex gap-3">✅ Suitable for All Hair Types</li>
+                        <li class="flex gap-3">✅ Handmade with Natural Herbs</li>
+                        <li class="flex gap-3">✅ No Parabens & SLS</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMING SOON PRODUCTS -->
-    <section id="shop" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-baseline mb-8">
-                <h2 class="heading-font text-5xl font-semibold text-[#0a3d2b]">Coming Soon • Stay Tuned</h2>
-                <span class="text-[#2e8b57] font-medium">More pure Ayurvedic treasures on the way...</span>
-            </div>
+    <!-- COMING SOON -->
+    <section id="shop" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="heading-font text-5xl font-semibold text-center text-emerald-950 mb-4">More Pure Products Coming Soon</h2>
+            <p class="text-center text-gray-600 mb-12">Stay tuned for our full range of Ayurvedic care</p>
             
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="product-card bg-white border border-gray-100 rounded-3xl p-6 text-center">
-                    <div class="h-40 bg-gradient-to-br from-emerald-100 to-white rounded-2xl flex items-center justify-center text-6xl">🌿</div>
-                    <h4 class="mt-6 font-semibold">Herbal Hair Oil</h4>
-                    <p class="text-xs text-gray-500">Bhringraj + Amla • Deep nourishment</p>
-                    <span class="inline-block mt-4 bg-amber-100 text-amber-700 text-xs px-4 py-1 rounded-3xl">Launching April 2026</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 border border-emerald-100 rounded-3xl">
+                    <div class="text-6xl mb-4">🪔</div>
+                    <h4 class="font-semibold">Herbal Hair Oil</h4>
+                    <p class="text-xs text-gray-500 mt-1">Coming Soon</p>
                 </div>
-                <div class="product-card bg-white border border-gray-100 rounded-3xl p-6 text-center">
-                    <div class="h-40 bg-gradient-to-br from-emerald-100 to-white rounded-2xl flex items-center justify-center text-6xl">🧴</div>
-                    <h4 class="mt-6 font-semibold">Natural Face Wash</h4>
-                    <p class="text-xs text-gray-500">Neem + Tulsi • Gentle cleansing</p>
-                    <span class="inline-block mt-4 bg-amber-100 text-amber-700 text-xs px-4 py-1 rounded-3xl">Launching April 2026</span>
+                <div class="text-center p-6 border border-emerald-100 rounded-3xl">
+                    <div class="text-6xl mb-4">🧴</div>
+                    <h4 class="font-semibold">Natural Face Wash</h4>
+                    <p class="text-xs text-gray-500 mt-1">Coming Soon</p>
                 </div>
-                <div class="product-card bg-white border border-gray-100 rounded-3xl p-6 text-center">
-                    <div class="h-40 bg-gradient-to-br from-emerald-100 to-white rounded-2xl flex items-center justify-center text-6xl">🧼</div>
-                    <h4 class="mt-6 font-semibold">Herbal Bath Soap</h4>
-                    <p class="text-xs text-gray-500">Hibiscus + Rose • Skin glow</p>
-                    <span class="inline-block mt-4 bg-amber-100 text-amber-700 text-xs px-4 py-1 rounded-3xl">Launching May 2026</span>
+                <div class="text-center p-6 border border-emerald-100 rounded-3xl">
+                    <div class="text-6xl mb-4">🌸</div>
+                    <h4 class="font-semibold">Herbal Bath Soap</h4>
+                    <p class="text-xs text-gray-500 mt-1">Coming Soon</p>
                 </div>
-                <div class="product-card bg-white border border-gray-100 rounded-3xl p-6 text-center">
-                    <div class="h-40 bg-gradient-to-br from-emerald-100 to-white rounded-2xl flex items-center justify-center text-6xl">💆‍♀️</div>
-                    <h4 class="mt-6 font-semibold">Scalp Serum</h4>
-                    <p class="text-xs text-gray-500">Fenugreek + Rosemary • Growth boost</p>
-                    <span class="inline-block mt-4 bg-amber-100 text-amber-700 text-xs px-4 py-1 rounded-3xl">Launching May 2026</span>
+                <div class="text-center p-6 border border-emerald-100 rounded-3xl">
+                    <div class="text-6xl mb-4">💆</div>
+                    <h4 class="font-semibold">Scalp Serum</h4>
+                    <p class="text-xs text-gray-500 mt-1">Coming Soon</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BOOK / ORDER PRODUCT NOW -->
-    <section id="book" class="py-16 bg-[#0a3d2b] text-white">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-10">
-                <h2 class="heading-font text-5xl font-semibold">Book Your Ayurvedic Hair Shampoo Now</h2>
-                <p class="mt-3 text-emerald-200">Limited stock • Handcrafted fresh for you</p>
+    <!-- ORDER / BOOK PRODUCT -->
+    <section class="py-20 bg-emerald-900 text-white">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-5xl font-semibold">Book Your Shampoo Now</h2>
+                <p class="mt-3 text-emerald-200">Limited batches • Freshly handmade</p>
             </div>
 
-            <form id="orderForm" class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 space-y-8">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm mb-2 font-medium">Your Full Name</label>
-                        <input type="text" id="name" required
-                               class="w-full bg-white text-black rounded-2xl px-5 py-4 outline-none border border-transparent focus:border-emerald-400">
-                    </div>
-                    <div>
-                        <label class="block text-sm mb-2 font-medium">Phone Number (with WhatsApp)</label>
-                        <input type="tel" id="phone" required placeholder="+91"
-                               class="w-full bg-white text-black rounded-2xl px-5 py-4 outline-none border border-transparent focus:border-emerald-400">
-                    </div>
+            <form onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                <div class="grid grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Full Name" required
+                           class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
+                    <input type="tel" id="phone" placeholder="Phone / WhatsApp Number" required
+                           class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
                 </div>
-
+                
                 <div>
-                    <label class="block text-sm mb-2 font-medium">Product</label>
-                    <select id="product" class="w-full bg-white text-black rounded-2xl px-5 py-4 outline-none">
-                        <option value="Ayurvedic Hair Shampoo">Ayurvedic Hair Shampoo (250ml)</option>
-                        <option value="Ayurvedic Hair Shampoo">Ayurvedic Hair Shampoo (500ml)</option>
+                    <select id="product" class="w-full bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-white">
+                        <option value="Ayurvedic Hair Shampoo 250ml">Ayurvedic Hair Shampoo - 250ml</option>
+                        <option value="Ayurvedic Hair Shampoo 500ml">Ayurvedic Hair Shampoo - 500ml</option>
                     </select>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm mb-2 font-medium">Quantity</label>
-                        <input type="number" id="quantity" value="1" min="1" required
-                               class="w-full bg-white text-black rounded-2xl px-5 py-4 outline-none border border-transparent focus:border-emerald-400">
-                    </div>
-                    <div>
-                        <label class="block text-sm mb-2 font-medium">Any message / special request</label>
-                        <textarea id="message" rows="3"
-                                  class="w-full bg-white text-black rounded-2xl px-5 py-4 outline-none border border-transparent focus:border-emerald-400"></textarea>
-                    </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <input type="number" id="quantity" value="1" min="1" placeholder="Quantity" required
+                           class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
+                    <button type="submit"
+                            class="bg-white text-emerald-900 font-semibold py-4 rounded-2xl hover:bg-emerald-100 transition flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        SEND VIA WHATSAPP
+                    </button>
                 </div>
-
-                <button onclick="sendToWhatsApp(event)" 
-                        class="w-full bg-white text-[#0a3d2b] font-semibold py-6 rounded-3xl flex items-center justify-center gap-3 hover:bg-emerald-100 transition text-xl">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                    SEND ORDER VIA WHATSAPP
-                </button>
             </form>
-            
-            <p class="text-center text-xs text-emerald-200 mt-6">Your order will be sent directly to our WhatsApp. We will confirm within minutes.</p>
         </div>
     </section>
 
-    <!-- CONTACT SECTION FOR AYURSATTVA (email & phone left empty for you to fill) -->
-    <section id="contact" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="heading-font text-5xl font-semibold text-center text-[#0a3d2b] mb-12">Get in Touch with AyurSattva</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-semibold text-emerald-950 mb-10">Contact AyurSattva</h2>
             
-            <div class="max-w-xl mx-auto bg-gray-50 rounded-3xl p-10">
-                <div class="space-y-8">
-                    <div>
-                        <p class="text-sm uppercase tracking-widest text-gray-500">Email</p>
-                        <p class="text-2xl font-medium text-[#0a3d2b] mt-1">[Your email address here]</p>
-                    </div>
-                    <div>
-                        <p class="text-sm uppercase tracking-widest text-gray-500">Phone / WhatsApp</p>
-                        <p class="text-2xl font-medium text-[#0a3d2b] mt-1">[Your phone number here]</p>
-                    </div>
-                    <div>
-                        <p class="text-sm uppercase tracking-widest text-gray-500">Address</p>
-                        <p class="text-gray-700">Pimpri, Maharashtra, India</p>
-                    </div>
+            <div class="grid md:grid-cols-2 gap-10 max-w-md mx-auto">
+                <div class="bg-emerald-50 p-8 rounded-3xl">
+                    <p class="uppercase text-xs tracking-widest text-emerald-700">Email</p>
+                    <p class="text-xl font-medium text-emerald-900 mt-2">[your-email@ayursattva.com]</p>
+                </div>
+                <div class="bg-emerald-50 p-8 rounded-3xl">
+                    <p class="uppercase text-xs tracking-widest text-emerald-700">Phone / WhatsApp</p>
+                    <p class="text-xl font-medium text-emerald-900 mt-2">[+91 Your Number]</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#0a3d2b] text-white py-12">
-        <div class="max-w-7xl mx-auto px-6 text-center">
+    <footer class="bg-emerald-950 text-white py-12 text-center">
+        <div>
             <p class="flex items-center justify-center gap-2 text-sm">
-                Made with 
-                <span class="text-red-400">❤️</span> 
-                by <span class="font-semibold">MithTechX</span>
+                Made with ❤️ by <span class="font-semibold">MithTechX</span>
             </p>
-            
-            <div class="mt-6 text-xs opacity-70 flex flex-wrap justify-center gap-x-8 gap-y-2">
-                <p>Contact MithTechX:</p>
-                <p>Email: <span class="font-medium">[your email]</span></p>
-                <p>Phone: <span class="font-medium">[your phone]</span></p>
-            </div>
-            
-            <p class="mt-10 text-xs opacity-50">© 2026 AyurSattva • All Rights Reserved • Proudly Ayurvedic</p>
+            <p class="mt-6 text-xs opacity-60">
+                Contact MithTechX • Email: [your email] • Phone: [your phone]
+            </p>
+            <p class="mt-8 text-[10px] opacity-40">© 2026 AyurSattva • Pimpri, Maharashtra</p>
         </div>
     </footer>
 
     <script>
-        // Tailwind script already loaded
         function sendToWhatsApp(e) {
             e.preventDefault();
             
@@ -353,27 +243,20 @@
             const phone = document.getElementById('phone').value;
             const product = document.getElementById('product').value;
             const qty = document.getElementById('quantity').value;
-            const msg = document.getElementById('message').value || "No additional message";
 
-            const whatsappNumber = "919876543210"; // ←←← CHANGE THIS TO AYURSATTVA'S ACTUAL WHATSAPP NUMBER
+            const text = `Hello AyurSattva!%0A%0A` +
+                        `I want to order:%0A` +
+                        `Product: ${product}%0A` +
+                        `Quantity: ${qty}%0A%0A` +
+                        `Name: ${name}%0A` +
+                        `My Number: ${phone}%0A%0A` +
+                        `Please confirm. Thank you!`;
 
-            const text = encodeURIComponent(
-                `Hello AyurSattva! 👋\n\n` +
-                `I would like to order:\n` +
-                `• Product: ${product}\n` +
-                `• Quantity: ${qty}\n\n` +
-                `My details:\n` +
-                `Name: ${name}\n` +
-                `Phone: ${phone}\n\n` +
-                `Message: ${msg}\n\n` +
-                `Thank you! 🙏`
-            );
-
+            // Replace the number below with AyurSattva's WhatsApp number
+            const whatsappNumber = "919XXXXXXXXX";   // ← CHANGE THIS TO ACTUAL NUMBER
+            
             window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
         }
-
-        // Mobile menu (optional enhancement)
-        console.log('%c✅ AyurSattva website ready! Replace placeholder image srcs and WhatsApp number.', 'color:#2e8b57; font-weight:bold');
     </script>
 </body>
 </html>
