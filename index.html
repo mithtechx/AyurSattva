@@ -8,23 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
-        
+       
         body {
             font-family: 'Inter', system_ui, sans-serif;
         }
-        
+       
         .heading-font {
             font-family: 'Playfair Display', sans-serif;
         }
-
         .hero-bg {
             background: linear-gradient(135deg, #0a3d2b 0%, #2e8b57 100%);
         }
-        
+       
         .product-card {
             transition: all 0.3s ease;
         }
-        
+       
         .product-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgb(46 139 87 / 0.15);
@@ -32,7 +31,6 @@
     </style>
 </head>
 <body class="bg-white text-gray-800">
-
     <!-- NAVBAR -->
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
@@ -40,7 +38,7 @@
                 <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center text-white text-xl">🌿</div>
                 <span class="heading-font text-3xl font-bold tracking-tight text-[#0a3d2b]">AyurSattva</span>
             </div>
-            
+           
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#home" class="hover:text-emerald-700 transition">Home</a>
                 <a href="#about" class="hover:text-emerald-700 transition">About</a>
@@ -48,8 +46,8 @@
                 <a href="#shop" class="hover:text-emerald-700 transition">Shop</a>
                 <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
             </div>
-            
-            <a href="#" onclick="alert('Open WhatsApp and message us!')" 
+           
+            <a href="#" onclick="alert('Open WhatsApp and message us!')"
                class="bg-emerald-700 text-white px-6 py-3 rounded-2xl flex items-center gap-2 hover:bg-emerald-800 transition">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
@@ -57,20 +55,19 @@
         </div>
     </nav>
 
-    <!-- HERO - Using your uploaded banner -->
+    <!-- HERO -->
     <section id="home" class="hero-bg text-white py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col items-center text-center">
-                <img src="https://i.postimg.cc/0yZ5Z5Z5/your-banner-image.jpg" 
-                     alt="AyurSattva" 
-                     class="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl mb-10"> 
-                <!-- Replace above src with your actual uploaded banner image link if hosted -->
-                
+                <img src="https://i.postimg.cc/0yZ5Z5Z5/your-banner-image.jpg"
+                     alt="AyurSattva"
+                     class="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl mb-10">
+               
                 <h1 class="heading-font text-6xl md:text-7xl font-bold">AyurSattva</h1>
                 <p class="text-2xl mt-3 text-emerald-100">The Essence of True Ayurveda</p>
-                
+               
                 <div class="mt-10 flex gap-4 justify-center">
-                    <a href="#shop" 
+                    <a href="#shop"
                        class="bg-white text-emerald-800 px-10 py-4 rounded-3xl font-semibold text-lg hover:scale-105 transition">
                         Shop Now
                     </a>
@@ -91,12 +88,13 @@
         </div>
     </section>
 
-    <!-- CURRENT PRODUCT: HAIR SHAMPOO -->
+    <!-- PRODUCT SECTION -->
     <section id="products" class="py-20 bg-emerald-50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="bg-emerald-700 text-white px-6 py-2 rounded-full text-sm font-medium">CURRENTLY AVAILABLE</span>
                 <h2 class="heading-font text-5xl font-semibold text-emerald-950 mt-4">Ayurvedic Hair Shampoo</h2>
+                <p class="text-2xl font-semibold text-emerald-700 mt-2">₹150 for 100ml</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
@@ -119,19 +117,44 @@
                     </div>
                 </div>
 
-                <!-- Benefits -->
-                <div class="bg-white rounded-3xl p-10 shadow">
-                    <h3 class="text-2xl font-semibold mb-8">Benefits</h3>
-                    <ul class="space-y-5 text-gray-700">
-                        <li class="flex gap-3">✅ 100% Natural & Chemical Free</li>
-                        <li class="flex gap-3">✅ Reduces Hair Fall</li>
-                        <li class="flex gap-3">✅ Controls Dandruff</li>
-                        <li class="flex gap-3">✅ Promotes Hair Growth</li>
-                        <li class="flex gap-3">✅ Makes Hair Soft & Shiny</li>
-                        <li class="flex gap-3">✅ Suitable for All Hair Types</li>
-                        <li class="flex gap-3">✅ Handmade with Natural Herbs</li>
-                        <li class="flex gap-3">✅ No Parabens & SLS</li>
-                    </ul>
+                <!-- Benefits + How to Use -->
+                <div class="bg-white rounded-3xl p-10 shadow space-y-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-8">Benefits</h3>
+                        <ul class="space-y-5 text-gray-700">
+                            <li class="flex gap-3">✅ 100% Natural & Chemical Free</li>
+                            <li class="flex gap-3">✅ Reduces Hair Fall</li>
+                            <li class="flex gap-3">✅ Controls Dandruff</li>
+                            <li class="flex gap-3">✅ Promotes Hair Growth</li>
+                            <li class="flex gap-3">✅ Makes Hair Soft & Shiny</li>
+                            <li class="flex gap-3">✅ Suitable for All Hair Types</li>
+                            <li class="flex gap-3">✅ Handmade with Natural Herbs</li>
+                            <li class="flex gap-3">✅ No Parabens & SLS</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+                            <span class="text-emerald-600">📋</span> How to Use
+                        </h3>
+                        <div class="bg-emerald-50 p-6 rounded-2xl text-gray-700 leading-relaxed">
+                            <p class="font-medium mb-3">Recommended Usage:</p>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3">
+                                    <span class="text-emerald-600 font-semibold">1.</span> 
+                                    Apply herbal hair oil and leave it for <strong>1 hour</strong> before washing.
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-emerald-600 font-semibold">2.</span> 
+                                    Use AyurSattva Hair Shampoo <strong>only 2 times a week</strong>.
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-emerald-600 font-semibold">3.</span> 
+                                    Gently massage into wet hair and scalp, then rinse thoroughly.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,7 +165,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="heading-font text-5xl font-semibold text-center text-emerald-950 mb-4">More Pure Products Coming Soon</h2>
             <p class="text-center text-gray-600 mb-12">Stay tuned for our full range of Ayurvedic care</p>
-            
+           
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="text-center p-6 border border-emerald-100 rounded-3xl">
                     <div class="text-6xl mb-4">🪔</div>
@@ -168,12 +191,12 @@
         </div>
     </section>
 
-    <!-- ORDER / BOOK PRODUCT -->
+    <!-- ORDER SECTION -->
     <section class="py-20 bg-emerald-900 text-white">
         <div class="max-w-2xl mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="heading-font text-5xl font-semibold">Book Your Shampoo Now</h2>
-                <p class="mt-3 text-emerald-200">Limited batches • Freshly handmade</p>
+                <p class="mt-3 text-emerald-200">₹150 • 100ml • Limited Fresh Batches</p>
             </div>
 
             <form onsubmit="sendToWhatsApp(event)" class="space-y-6">
@@ -183,17 +206,17 @@
                     <input type="tel" id="phone" placeholder="Phone / WhatsApp Number" required
                            class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
                 </div>
-                
+               
                 <div>
                     <select id="product" class="w-full bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-white">
-                        <option value="Ayurvedic Hair Shampoo 250ml">Ayurvedic Hair Shampoo - 250ml</option>
-                        <option value="Ayurvedic Hair Shampoo 500ml">Ayurvedic Hair Shampoo - 500ml</option>
+                        <option value="Ayurvedic Hair Shampoo 100ml">Ayurvedic Hair Shampoo - 100ml (₹150)</option>
                     </select>
                 </div>
 
                 <div class="grid grid-cols-2 gap-6">
                     <input type="number" id="quantity" value="1" min="1" placeholder="Quantity" required
                            class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
+                    
                     <button type="submit"
                             class="bg-white text-emerald-900 font-semibold py-4 rounded-2xl hover:bg-emerald-100 transition flex items-center justify-center gap-3">
                         <i class="fab fa-whatsapp text-2xl"></i>
@@ -208,7 +231,7 @@
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="heading-font text-5xl font-semibold text-emerald-950 mb-10">Contact AyurSattva</h2>
-            
+           
             <div class="grid md:grid-cols-2 gap-10 max-w-md mx-auto">
                 <div class="bg-emerald-50 p-8 rounded-3xl">
                     <p class="uppercase text-xs tracking-widest text-emerald-700">Email</p>
@@ -216,7 +239,7 @@
                 </div>
                 <div class="bg-emerald-50 p-8 rounded-3xl">
                     <p class="uppercase text-xs tracking-widest text-emerald-700">Phone / WhatsApp</p>
-                    <p class="text-xl font-medium text-emerald-900 mt-2">+91 9119463885 </p>
+                    <p class="text-xl font-medium text-emerald-900 mt-2">+91 9119463885</p>
                 </div>
             </div>
         </div>
@@ -229,7 +252,7 @@
                 Made with ❤️ by <span class="font-semibold">MithTechX</span>
             </p>
             <p class="mt-6 text-xs opacity-60">
-                Contact MithTechX • Email: [your email] • Phone: [your phone]
+                Contact: +91 9119463885
             </p>
             <p class="mt-8 text-[10px] opacity-40">© 2026 AyurSattva • Pimpri, Maharashtra</p>
         </div>
@@ -238,7 +261,7 @@
     <script>
         function sendToWhatsApp(e) {
             e.preventDefault();
-            
+           
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const product = document.getElementById('product').value;
@@ -250,11 +273,10 @@
                         `Quantity: ${qty}%0A%0A` +
                         `Name: ${name}%0A` +
                         `My Number: ${phone}%0A%0A` +
-                        `Please confirm. Thank you!`;
+                        `Please confirm availability and payment details. Thank you!`;
 
-            // Replace the number below with AyurSattva's WhatsApp number
-            const whatsappNumber = "919119463885";   // ← CHANGE THIS TO ACTUAL NUMBER
-            
+            const whatsappNumber = "919119463885";   // Correct number without +
+
             window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
         }
     </script>
