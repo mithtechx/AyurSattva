@@ -9,33 +9,24 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-       
-        .heading-font {
-            font-family: 'Playfair Display', sans-serif;
-        }
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading-font { font-family: 'Playfair Display', sans-serif; }
+        
         .hero-bg {
             background: linear-gradient(135deg, #0a3d2b 0%, #2e8b57 100%);
-        }
-       
-        .product-card {
-            transition: all 0.3s ease;
-        }
-       
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgb(46 139 87 / 0.15);
         }
     </style>
 </head>
 <body class="bg-white text-gray-800">
+
     <!-- NAVBAR -->
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center text-white text-xl">🌿</div>
+                <!-- === REPLACE THIS WITH YOUR LOGO DIRECT LINK === -->
+                <img src="https://via.placeholder.com/48x48/0a3d2b/ffffff?text=🌿" 
+                     alt="AyurSattva Logo" 
+                     class="w-11 h-11 object-contain rounded-2xl">
                 <span class="heading-font text-3xl font-bold tracking-tight text-[#0a3d2b]">AyurSattva</span>
             </div>
            
@@ -47,7 +38,7 @@
                 <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
             </div>
            
-            <a href="#" onclick="alert('Open WhatsApp and message us!')"
+            <a href="#" onclick="alert('Message us on WhatsApp!')"
                class="bg-emerald-700 text-white px-6 py-3 rounded-2xl flex items-center gap-2 hover:bg-emerald-800 transition">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
@@ -55,20 +46,24 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section id="home" class="hero-bg text-white py-24">
+    <!-- HERO SECTION - Your Banner Added -->
+    <section id="home" class="hero-bg text-white py-20 md:py-28">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col items-center text-center">
-                <img src="https://i.postimg.cc/0yZ5Z5Z5/your-banner-image.jpg"
-                     alt="AyurSattva"
-                     class="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl mb-10">
-               
-                <h1 class="heading-font text-6xl md:text-7xl font-bold">AyurSattva</h1>
+                
+                <!-- Your Banner Image -->
+                <div class="w-full max-w-4xl mx-auto mb-10">
+                    <img src="https://i.ibb.co/Rpbwsqwv/Whats-App-Image-2026-03-30-at-8-48-55-PM.jpg" 
+                         alt="AyurSattva Banner" 
+                         class="w-full rounded-3xl shadow-2xl object-cover">
+                </div>
+
+                <h1 class="heading-font text-5xl md:text-7xl font-bold leading-tight">AyurSattva</h1>
                 <p class="text-2xl mt-3 text-emerald-100">The Essence of True Ayurveda</p>
                
-                <div class="mt-10 flex gap-4 justify-center">
-                    <a href="#shop"
-                       class="bg-white text-emerald-800 px-10 py-4 rounded-3xl font-semibold text-lg hover:scale-105 transition">
+                <div class="mt-10">
+                    <a href="#shop" 
+                       class="bg-white text-emerald-800 px-10 py-4 rounded-3xl font-semibold text-lg hover:scale-105 transition inline-block">
                         Shop Now
                     </a>
                 </div>
@@ -94,7 +89,7 @@
             <div class="text-center mb-12">
                 <span class="bg-emerald-700 text-white px-6 py-2 rounded-full text-sm font-medium">CURRENTLY AVAILABLE</span>
                 <h2 class="heading-font text-5xl font-semibold text-emerald-950 mt-4">Ayurvedic Hair Shampoo</h2>
-                <p class="text-2xl font-semibold text-emerald-700 mt-2">₹150 for 100ml</p>
+                <p class="text-2xl font-semibold text-emerald-700 mt-2">₹150 • 100ml</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
@@ -138,18 +133,17 @@
                             <span class="text-emerald-600">📋</span> How to Use
                         </h3>
                         <div class="bg-emerald-50 p-6 rounded-2xl text-gray-700 leading-relaxed">
-                            <p class="font-medium mb-3">Recommended Usage:</p>
-                            <ul class="space-y-3">
+                            <ul class="space-y-4">
                                 <li class="flex gap-3">
-                                    <span class="text-emerald-600 font-semibold">1.</span> 
+                                    <span class="font-semibold text-emerald-700">1.</span> 
                                     Apply herbal hair oil and leave it for <strong>1 hour</strong> before washing.
                                 </li>
                                 <li class="flex gap-3">
-                                    <span class="text-emerald-600 font-semibold">2.</span> 
+                                    <span class="font-semibold text-emerald-700">2.</span> 
                                     Use AyurSattva Hair Shampoo <strong>only 2 times a week</strong>.
                                 </li>
                                 <li class="flex gap-3">
-                                    <span class="text-emerald-600 font-semibold">3.</span> 
+                                    <span class="font-semibold text-emerald-700">3.</span> 
                                     Gently massage into wet hair and scalp, then rinse thoroughly.
                                 </li>
                             </ul>
@@ -214,7 +208,7 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-6">
-                    <input type="number" id="quantity" value="1" min="1" placeholder="Quantity" required
+                    <input type="number" id="quantity" value="1" min="1" required
                            class="bg-white/10 border border-white/30 rounded-2xl px-6 py-4 text-white placeholder:text-white/60 focus:outline-none focus:border-white">
                     
                     <button type="submit"
@@ -231,12 +225,7 @@
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="heading-font text-5xl font-semibold text-emerald-950 mb-10">Contact AyurSattva</h2>
-           
             <div class="grid md:grid-cols-2 gap-10 max-w-md mx-auto">
-                <div class="bg-emerald-50 p-8 rounded-3xl">
-                    <p class="uppercase text-xs tracking-widest text-emerald-700">Email</p>
-                    <p class="text-xl font-medium text-emerald-900 mt-2">[your-email@ayursattva.com]</p>
-                </div>
                 <div class="bg-emerald-50 p-8 rounded-3xl">
                     <p class="uppercase text-xs tracking-widest text-emerald-700">Phone / WhatsApp</p>
                     <p class="text-xl font-medium text-emerald-900 mt-2">+91 9119463885</p>
@@ -251,17 +240,14 @@
             <p class="flex items-center justify-center gap-2 text-sm">
                 Made with ❤️ by <span class="font-semibold">MithTechX</span>
             </p>
-            <p class="mt-6 text-xs opacity-60">
-                Contact: +91 9119463885
-            </p>
-            <p class="mt-8 text-[10px] opacity-40">© 2026 AyurSattva • Pimpri, Maharashtra</p>
+            <p class="mt-6 text-xs opacity-60">+91 9119463885 • Pimpri, Maharashtra</p>
+            <p class="mt-8 text-[10px] opacity-40">© 2026 AyurSattva</p>
         </div>
     </footer>
 
     <script>
         function sendToWhatsApp(e) {
             e.preventDefault();
-           
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const product = document.getElementById('product').value;
@@ -273,10 +259,9 @@
                         `Quantity: ${qty}%0A%0A` +
                         `Name: ${name}%0A` +
                         `My Number: ${phone}%0A%0A` +
-                        `Please confirm availability and payment details. Thank you!`;
+                        `Please confirm availability. Thank you!`;
 
-            const whatsappNumber = "919119463885";   // Correct number without +
-
+            const whatsappNumber = "919119463885";
             window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
         }
     </script>
